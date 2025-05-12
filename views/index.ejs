@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full h-full bg-zinc-900 p-1 0 text-white">
+        <h1 class="text-3xl tracking-tighter mb-3">
+        CRud with MongoDb and create user
+      </h1>
+      <form action="/create" method="post" class="flex flex-col space-y-4 w-full max-w-md">
+        <input
+          type="text"
+          class="px-5 py-2 border-2 outline-none border-zinc-800 rounded-lg bg-transparent"
+          placeholder="name"
+          name="name"
+        />
+        <input
+          type="text"
+          class="px-5 py-2 border-2 outline-none border-zinc-800 rounded-lg bg-transparent"
+          placeholder="email"
+          name="email"
+        />
+        <input
+          type="text"
+          class="px-5 py-2 border-2 outline-none border-zinc-800 rounded-lg bg-transparent"
+          placeholder="image url"
+          name="image"
+        />
+        <input
+          type="submit"
+          class="bg-blue-500 px-5 py-2 rounded-lg text-white text-lg cursor-pointer"
+          value="create user"
+        />
+      </form>
+      
+      <div class="nav mt-6">
+        <a href="/read" class="px-4 py-2 border-2 text-zinc-800 rounded-lg bg-blue-300 inline-block">
+          Read Users
+        </a>
+      </div>
+    </div>
+    
+  </body>
+</html>
